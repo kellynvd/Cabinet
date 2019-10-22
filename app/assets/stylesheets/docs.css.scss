@@ -58,13 +58,11 @@
       margin-top: 3rem;
       text-align: center;
       a.button {
-        padding: .2rem 1.5rem;
+        padding: .4rem 1rem;
         border-radius: 0.1rem;
         text-decoration: none;
-        color: #529ECC;
-        border: 5px solid #529ECC;
-        @include bold_font;
-        background: transparent;
+        color: white;
+        background: #529ECC ;
       }
     }
   }
