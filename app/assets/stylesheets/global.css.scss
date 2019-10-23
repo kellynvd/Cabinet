@@ -2,12 +2,6 @@ $dark_gray: #2B2E2E;
 $light_gray: #C0C1C1;
 $green: #529ECC;
 
-@mixin bold_font {
-  font-family: 'Dosis', sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
 * {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
@@ -44,7 +38,7 @@ button, .button {
 	border: none;
 	outline: none;
 	background: $green;
-	padding: 1rem 3.5rem;
+	padding: 0.5rem 1rem;
 	border-radius: 0.1rem;
 	a {
 		color: white;
@@ -55,7 +49,7 @@ button, .button {
 
 .button {
 	color: white;
-	margin: 2rem 0;
+	margin: 0.5rem 0 1.5rem 0;
 }
 
 a {
@@ -74,7 +68,7 @@ header {
 	top: 0;
 	width: 100%;
 	padding: 1.75rem 0;
-	border-bottom: 1.5px solid #376490;
+	border-bottom: 1.5px solid $light_gray;
 	.header_inner {
 		width: 90%;
 		margin: 0 auto;
@@ -85,14 +79,14 @@ header {
 			font-weight: bold;
 			color: white;
 			font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
-			font-size: 2.0rem;
+			font-size: 1.8rem;
 		}
 		nav {
 			float: right;
 			a {
 				text-decoration: none;
 				color: white;
-				font-size: 1.1rem;
+				font-size: 1.2rem;
 				line-height: 1.5;
 				margin-left: 1rem;
 				&:hover {
@@ -100,21 +94,6 @@ header {
 				}
 			}
 		}
-	}
-}
-
-// FOOTER STYLING (OPTIONAL)
-
-footer {
-	background: #529ECC;
-	width: 100%;
-	padding: 2rem 0;
-	color: white;
-	text-align: center;
-	@include bold_font;
-	p {
-		margin: 0;
-		font-size: .65rem;
 	}
 }
 
