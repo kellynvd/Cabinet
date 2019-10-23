@@ -9,11 +9,12 @@
       border-radius: 1.2rem;
       position: relative;
       text-align: left;
-      .title a {
+      .title {
         color: white;
         margin: 0;
         left: 4.5%;
         font-size: 1.8rem;
+        padding: 2rem 0rem 0rem 0rem;
         &:hover {
           color: $light_gray;
         }
@@ -24,16 +25,20 @@
         font-weight: lighter;
         font-size: .75rem;
         text-align: left;
+        &:hover {
+          color: $light_gray;
+        }
       }
       .content {
-        // position: absolute;
         bottom: .1rem;
         left: 27.5%;
         color: white;
         font-weight: bold;
         font-size: .75rem;
         text-align: left;
-        // padding-bottom: 10px;
+        &:hover {
+          color: $light_gray;
+        }
       }
     }
   }

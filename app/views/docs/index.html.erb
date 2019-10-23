@@ -7,11 +7,13 @@
       <% else %>
         <% @docs.each do |doc| %>
           <div class="doc">
-            <p class="title"><%= link_to doc.title, doc %></p>
+          <%= link_to(doc) do %>
+            <p class="title"><%= doc.title %></p>
             <p class="date"><%= time_ago_in_words(doc.created_at) %></p>
-            <p class="content"><%= truncate(doc.content, length:50) %></p>
+            <p class="content"><%= truncate(doc.content, length:100) %></p>
+          <% end %>
           </div>
-      <% end %>
+     <% end %>
   </div>
 
 
