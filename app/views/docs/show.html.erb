@@ -4,8 +4,8 @@
     <p> <%= @doc.content %></p>
 
     <div class="buttons">
-      <%= link_to 'Edit', edit_doc_path(@doc), class: 'button' %>
-      <%= link_to 'Remove', doc_path(@doc), method: :delete, data: { confirm: 'Are you sure?' }, class: 'button' %>
+      <%= link_to t('.edit'), edit_doc_path(@doc), class: 'button' %>
+      <%= link_to t('.destroy'), doc_path(@doc), method: :delete, data: { confirm: t(:confirm_message) }, class: 'button' %>
     </div>
   </div>
 </div>
