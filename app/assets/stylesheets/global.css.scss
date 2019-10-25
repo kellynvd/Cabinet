@@ -1,7 +1,10 @@
+// Colors
 $dark_gray: #2B2E2E;
 $light_gray: #C0C1C1;
-$green: #529ECC;
+$dark_gray: #808080;
+$blue: #529ECC;
 $dark_red: #B94A48;
+$white: #FFFFFF;
 
 * {
 	box-sizing: border-box;
@@ -24,37 +27,28 @@ body {
 	padding: 3.5rem 0;
 }
 
-.clearfix:before, .clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
 // BUTTON STYLING
 
 button, .button {
 	border: none;
 	outline: none;
-	background: $green;
+	background: $blue;
 	padding: 0.5rem 1rem;
 	border-radius: 0.1rem;
 	a {
-		color: white;
+		color: $white;
 		text-decoration: none;
 		font-weight: bold;
 	}
 }
 
 .button {
-	color: white;
+	color: $white;
 	margin: 0.5rem 0 1.5rem 0;
 }
 
 a {
-	color: $green;
+	color: $blue;
 	text-decoration: none;
 	&:hover {
 		color: $dark_gray;
@@ -64,7 +58,7 @@ a {
 // HEADER STYLING
 
 header {
-	background: #529ECC;
+	background: $blue;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -78,7 +72,7 @@ header {
 			width: 10rem;
 			float: left;
 			font-weight: bold;
-			color: white;
+			color: $white;
 			font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
 			font-size: 1.8rem;
 		}
@@ -86,7 +80,7 @@ header {
 			float: right;
 			a {
 				text-decoration: none;
-				color: white;
+				color: $white;
 				font-size: 1.2rem;
 				line-height: 1.5;
 				margin-left: 1rem;
@@ -134,7 +128,7 @@ textarea {
   text-align: left;
   margin-left: 40%;
   margin-top: 50px;
-  font-size:1em;
+  font-size: 1rem;
   padding: 0.5rem 1.5rem;
   text-align: center;
 }
